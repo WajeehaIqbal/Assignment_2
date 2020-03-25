@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/olpbackground2"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="621dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Olympic2020"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorAccent"
+                android:text="@string/Olympic2020"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Olympic 2020" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/archery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="315dp"
+            android:text="@string/archery"
+            tools:text="Archery" />
+
+        <Button
+            android:id="@+id/boxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="170dp"
+            android:text="@string/boxing"
+            tools:text="Boxing" />
+
+        <Button
+            android:id="@+id/swimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="234dp"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="440dp"
+            android:text="@string/swimming"
+            tools:text="Swimming" />
+
+        <Button
+            android:id="@+id/hockey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="301dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="22dp"
+            android:text="@string/hockey"
+            tools:text="Hockey" />
+
+        <Button
+            android:id="@+id/tennis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="282dp"
+            android:layout_marginTop="234dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="438dp"
+            android:text="@string/tennis"
+            tools:text="Tennis" />
+    </RelativeLayout>
+</LinearLayout>
