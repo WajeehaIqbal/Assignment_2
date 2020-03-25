@@ -1,0 +1,40 @@
+package com.example.layoutswithintent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //Add Logo
+        LinearLayout lilayout=new LinearLayout(this);
+        lilayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+        lilayout.setOrientation(LinearLayout.VERTICAL);
+        lilayout.setBackground(getResources().getDrawable(R.drawable.olpbackground));
+        ImageView logo=new ImageView(this);
+        logo.setImageDrawable(getResources().getDrawable(R.drawable.olpforeground));
+        lilayout.setGravity(Gravity.CENTER_HORIZONTAL);
+        lilayout.setPadding(50,500,50,500);
+        lilayout.addView(logo);
+        setContentView(lilayout);
+        lilayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onNext();
+            }
+        });
+    }
+    public void onNext() {
+        Intent intent = new Intent(this,SecondActivity.class);
+        startActivity(intent);
+    }
+}
