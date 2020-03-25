@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/olpbackground2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="432dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/archerybackground"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/logo"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/archery"></FrameLayout>
+
+        <TextView
+            android:id="@+id/Archery"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#F8F7F7"
+            android:text="@string/Archery"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Archry" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Home"
+            tools:text="Home"
+            />
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginEnd="225dp"
+            android:text="@string/Back"
+            tools:text="Back" />
+
+        <Button
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="118dp"
+            android:layout_marginBottom="251dp"
+            android:text="@string/Score"
+            tools:text="Score" />
+
+        <Button
+            android:id="@+id/Points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="307dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Points"
+            tools:text="Points" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
